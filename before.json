@@ -1,0 +1,98 @@
+{
+    "ROOT": {
+        "type": {
+            "resolvedName": "Container"
+        },
+        "isCanvas": true,
+        "props": {
+            "display": "block",
+            "width": "100%",
+            "id": "canvasWrapper"
+        },
+        "displayName": "Container",
+        "custom": {
+            "css": {
+                "height": "255px",
+                "backgroundColor": "var(--color-backgroundLight)",
+                "width": "100%",
+                "maxWidth": "calc(100% - 30px)",
+                "margin": "15px",
+                "border": "2px dashed var(--color-borderLight)",
+                "overflow": "hidden",
+                "boxSizing": "border-box"
+            }
+        },
+        "hidden": false,
+        "nodes": [
+            "8b935gFlB2",
+            "QQH0L8uH8p",
+            "ooc-SetmAQ"
+        ],
+        "linkedNodes": {}
+    },
+    "8b935gFlB2": {
+        "type": {
+            "resolvedName": "Text"
+        },
+        "isCanvas": false,
+        "props": {
+            "color": "typeTitle",
+            "weight": "bold",
+            "name": "heading2",
+            "align": "left",
+            "strategy": "firstValue",
+            "isDataDynamic": true,
+            "text": "Text...",
+            "isCustomTile": true,
+            "dataBind": "$.api.tileData.items[0].user.login"
+        },
+        "displayName": "Text",
+        "custom": {},
+        "parent": "ROOT",
+        "hidden": false,
+        "nodes": [],
+        "linkedNodes": {}
+    },
+    "QQH0L8uH8p": {
+        "type": {
+            "resolvedName": "Text"
+        },
+        "isCanvas": false,
+        "props": {
+            "color": "typeTitle",
+            "weight": "bold",
+            "name": "heading2",
+            "align": "left",
+            "strategy": "firstValue",
+            "isDataDynamic": true,
+            "text": "Text...",
+            "isCustomTile": true,
+            "dataBind": "$.api.tileData.items[0].user.repos_url"
+        },
+        "displayName": "Text",
+        "custom": {},
+        "parent": "ROOT",
+        "hidden": false,
+        "nodes": [],
+        "linkedNodes": {}
+    },
+    "ooc-SetmAQ": {
+        "type": {
+            "resolvedName": "Image"
+        },
+        "isCanvas": false,
+        "props": {
+            "dataBind": "$.api.tileData.items[0].user.avatar_url",
+            "src": "",
+            "alt": "",
+            "height": "70px",
+            "width": "70px"
+        },
+        "displayName": "Image",
+        "custom": {},
+        "parent": "ROOT",
+        "hidden": false,
+        "nodes": [],
+        "linkedNodes": {}
+    }
+}
